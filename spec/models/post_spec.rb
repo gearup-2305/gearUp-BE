@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe Post, type: :model do
   describe "relationships" do
     it { should belong_to :artist }
+    it { should have_many :donations }
   end
 
   describe "validations" do
@@ -12,4 +13,4 @@ RSpec.describe Post, type: :model do
     it { should validate_presence_of :requested_amount }
     it { should validate_presence_of :current_amount }
   end
-end
+end 

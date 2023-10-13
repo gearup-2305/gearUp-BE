@@ -7,25 +7,39 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 
-5.times do
+30.times do 
   artist = Artist.create(
     name: Faker::Artist.name,
     email: Faker::Internet.email,
     city: Faker::Address.city,
     state: Faker::Address.state,
     zipcode: Faker::Address.zip_code,
-    password: 'password'
-    medium: Faker::Lorem.word,
+    password: 'password',
+    medium: Faker::TvShows::TheFreshPrinceOfBelAir.quote,
     profile_image: Faker::Avatar.image
   )
 
-  5.times do
+  num_posts = rand(0..10)
+
+  num_posts.times do
+    requested_amount = format('%.2f', rand(0.1..1000000.0))
+    current_amount = format('%.2f', rand(0.1..requested_amount.to_f))
+
     artist.posts.create(
-      title: Faker::Lorem.sentence,
-      details: Faker::Lorem.paragraph,
+      title: Faker::TvShows::TheFreshPrinceOfBelAir.quote,
+      details: Faker::TvShows::TheFreshPrinceOfBelAir.quote,
       image_url: Faker::Internet.url,
-      requested_amount: Faker::Number.decimal(l_digits: 2),
-      current_amount: Faker::Number.decimal(l_digits: 2)
+      requested_amount: requested_amount,
+      current_amount: current_amount
+    )
+  end
+
+  donation_amount = rand(0.1..1000)
+    donations = artist.posts.each do |post|
+      post.donations.create(
+      name: Faker::Hipster.name,
+      email: Faker::Internet.email,
+      amount: donation_amount
     )
   end
 end

@@ -21,7 +21,7 @@ module Types
     field :artists, [Types::ArtistType], null: false 
       
     def artists
-      Artist.all
+      Artist.includes(:posts).all
     end
 
     field :artist, Types::ArtistType, null: false do
