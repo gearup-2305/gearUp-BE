@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_12_171550) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_13_194526) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -27,12 +27,21 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_12_171550) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "donations", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.float "amount"
+    t.bigint "post_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["post_id"], name: "index_donations_on_post_id"
+  end
+
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.string "details"
     t.string "image_url"
     t.float "requested_amount"
-    t.integer "category"
     t.float "current_amount"
     t.bigint "artist_id", null: false
     t.datetime "created_at", null: false
@@ -40,5 +49,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_12_171550) do
     t.index ["artist_id"], name: "index_posts_on_artist_id"
   end
 
+  add_foreign_key "donations", "posts"
   add_foreign_key "posts", "artists"
 end

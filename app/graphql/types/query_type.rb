@@ -18,14 +18,18 @@ module Types
       ids.map { |id| context.schema.object_from_id(id, context) }
     end
 
-    # Add root-level fields here.
-    # They will be entry points for queries on your schema.
-
-    # TODO: remove me
-    field :artists, String, null: false,
-      description: "All artists"
+    field :artists, [Types::ArtistType], null: false 
+      
     def artists
-      Artist.all
+      Artist.includes(:posts).all
     end
+
+    field :artist, Types::ArtistType, null: false do
+      argument :id, ID, required: true
+    end
+    
+    def artist(id:)
+      Artist.includes(:posts).find(id)
+    end 
   end
 end

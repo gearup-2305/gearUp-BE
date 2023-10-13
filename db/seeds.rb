@@ -5,23 +5,41 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-painter = Artist.create!(
-  name: "Bob Ross",
-  email: "example@gamil.com",
-  city: "Orlando",
-  state: "FL",
-  zipcode: 32156,
-  password: "password",
-  medium: "Oil",
-  profile_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Bob_Ross%2C_c._1983.jpg/440px-Bob_Ross%2C_c._1983.jpg"
-)
 
-# Posts
-painter.posts.create!(
-  title: "Happy Little Trees",
-  details: "I like to paint happy little trees",
-  image_url: "https://i.pinimg.com/originals/0f/6e/9a/0f6e9a3b2b2b5b0b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2.jpg",
-  requested_amount: 100.0,
-  current_amount: 0,
-  artist_id: painter.id
-)
+
+30.times do 
+  artist = Artist.create(
+    name: Faker::Artist.name,
+    email: Faker::Internet.email,
+    city: Faker::Address.city,
+    state: Faker::Address.state,
+    zipcode: Faker::Address.zip_code,
+    password: 'password',
+    medium: Faker::TvShows::TheFreshPrinceOfBelAir.quote,
+    profile_image: Faker::Avatar.image
+  )
+
+  num_posts = rand(0..10)
+
+  num_posts.times do
+    requested_amount = format('%.2f', rand(0.1..1000000.0))
+    current_amount = format('%.2f', rand(0.1..requested_amount.to_f))
+
+    artist.posts.create(
+      title: Faker::TvShows::TheFreshPrinceOfBelAir.quote,
+      details: Faker::TvShows::TheFreshPrinceOfBelAir.quote,
+      image_url: Faker::Internet.url,
+      requested_amount: requested_amount,
+      current_amount: current_amount
+    )
+  end
+
+  donation_amount = rand(0.1..1000)
+    donations = artist.posts.each do |post|
+      post.donations.create(
+      name: Faker::Hipster.name,
+      email: Faker::Internet.email,
+      amount: donation_amount
+    )
+  end
+end
