@@ -57,14 +57,16 @@ RSpec.describe 'GraphQL Create Donation', :vcr do
 
       expect(result["data"]["createDonation"]["donation"]).to have_key("id")
       expect(result["data"]["createDonation"]["donation"]).to have_key("amount")
-      expect(result["data"]["createDonation"]["donation"]["amount"]).to eq(50.0)
 
+      expect(result["data"]["createDonation"]["donation"]["amount"]).to eq(50.0)
       expect(result["data"]["createDonation"]["errors"]).to eq([])
 
       expect(Donation.last.amount).to eq(50.0)
       expect(Donation.last.post_id).to eq(1)
+
       expect(Donation.last.name).to eq("donation")
       expect(Donation.last.email).to eq("email@gmail.com")
+      
       expect(Donation.last.post.current_amount).to eq(50.0)
     end
 

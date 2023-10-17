@@ -65,17 +65,22 @@ RSpec.describe 'GraphQL Update Post', :vcr do
 
       expect(result["data"]["updatePost"]).to have_key("post")
       expect(result["data"]["updatePost"]["post"]).to be_a(Hash)
+
       expect(result["data"]["updatePost"]["post"]).to have_key("id")
       expect(result["data"]["updatePost"]["post"]).to have_key("title")
+
       expect(result["data"]["updatePost"]["post"]).to have_key("details")
       expect(result["data"]["updatePost"]["post"]).to have_key("imageUrl")
+
       expect(result["data"]["updatePost"]["post"]).to have_key("requestedAmount")
       expect(result["data"]["updatePost"]["post"]).to have_key("currentAmount")
 
       expect(result["data"]["updatePost"]["post"]["id"]).to eq("1")
       expect(result["data"]["updatePost"]["post"]["title"]).to eq("I need ")
+
       expect(result["data"]["updatePost"]["post"]["details"]).to eq("Don't worry")
       expect(result["data"]["updatePost"]["post"]["imageUrl"]).to eq("http://wiegand.test/jaye_reinger")
+      
       expect(result["data"]["updatePost"]["post"]["requestedAmount"]).to eq(3444.00)
       expect(result["data"]["updatePost"]["post"]["currentAmount"]).to eq(0)
     end
