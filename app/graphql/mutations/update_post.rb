@@ -8,7 +8,7 @@ module Mutations
     argument :current_amount, Float, required: true
     argument :artist_id, Integer, required: true
 
-    field :post, Types::PostType, null: false
+    field :post, Types::PostType, null: true
     field :errors, [String], null: false
 
     def resolve(id:, title:, details:, image_url:, requested_amount:, current_amount:, artist_id:)
