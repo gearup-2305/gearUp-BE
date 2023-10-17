@@ -80,30 +80,37 @@ RSpec.describe 'GraphQL Update Post', :vcr do
       expect(result["data"]["updatePost"]["post"]["currentAmount"]).to eq(0)
     end
 
-    # it "returns an error if post is not updated" do
-    #   mutation = <<~GRAPHQL
-    #     mutation UpdatePost {
-    #       updatePost(input: {
-    #         id: 1,
-    #         title: "I need ",
-    #         details: "Don't worry",
-    #         imageUrl: "http://wiegand.test/jaye_reinger",
-    #         requestedAmount: 3444.00,
-    #         currentAmount: 0,
-    #         artistId: 1
-    #       }) {
-    #         post {
-    #           id
-    #           title
-    #           details
-    #           imageUrl
-    #           requestedAmount
-    #           currentAmount
-    #         }
-    #         errors
-    #       }
-    #     }
-    #     GRAPHQL
-    # end
+    it "returns an error if post is not updated" do
+      mutation = <<~GRAPHQL
+        mutation UpdatePost {
+          updatePost(input: {
+            id: 1,
+            title: "I need ",
+          }) {
+            post {
+              id
+              title
+              details
+              imageUrl
+              requestedAmount
+              currentAmount
+            }
+            errors
+          }
+        }
+        GRAPHQL
+
+      post "/graphql", params: { query: mutation }
+      result = JSON.parse(response.body)
+
+      expect(result).to be_a(Hash)
+      expect(result).to have_key("errors")
+
+      expect(result["errors"]).to be_a(Array)
+      expect(result["errors"].first).to be_a(Hash)
+
+      expect(result["errors"].first).to have_key("message")
+      expect(result["errors"].first["message"]).to eq("Argument 'details' on InputObject 'UpdatePostInput' is required. Expected type String!")
+    end
   end
 end
