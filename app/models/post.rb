@@ -8,4 +8,10 @@ class Post < ApplicationRecord
                         :image_url, 
                         :requested_amount, 
                         :current_amount
+
+              
+  def update_current_amount
+    self.current_amount = donations.sum(:amount)
+    self.save
+  end
 end
