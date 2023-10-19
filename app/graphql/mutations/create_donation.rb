@@ -9,8 +9,9 @@ module Mutations
     field :errors, [String], null: false
 
     def resolve(amount:, post_id:, name:, email:)
+
       post = Post.find(post_id)
-      donation = post.donations.new(amount: amount, post_id: post_id, name: name, email: email)
+      donation = post.donations.create!(amount: amount, post_id: post_id, name: name, email: email)
       
       if donation.save
         post.update_current_amount
