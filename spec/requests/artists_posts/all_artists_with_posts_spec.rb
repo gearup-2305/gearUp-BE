@@ -135,5 +135,41 @@ RSpec.describe 'GraphQL ALL Artists', :vcr do
       expect(result["data"]["artists"][0]["posts"][0]).to_not have_key("currentAmount")
       expect(result["data"]["artists"][0]["posts"][0]).to_not have_key("artistId")
     end
+
+    it "returns a donation_percentage for each post, and donations is nested in posts" do
+      query = <<~GRAPHQL
+        query {
+          artists {
+              name
+              posts {
+                donationPercentage
+                donations {
+                  amount
+                }
+              }
+            }
+          }
+        GRAPHQL
+
+      post "/graphql", params: { query: query }
+
+      result = JSON.parse(response.body)
+
+      expect(result).to be_a(Hash)
+      expect(result).to have_key("data")
+
+      expect(result["data"]).to have_key("artists")
+      expect(result["data"]["artists"]).to be_an(Array)
+
+      expect(result["data"]["artists"][0]).to have_key("name")  
+      expect(result["data"]["artists"][0]).to have_key("posts")
+      expect(result["data"]["artists"][0]["posts"]).to be_an(Array)
+
+      expect(result["data"]["artists"][0]["posts"][0]).to have_key("donationPercentage")
+      expect(result["data"]["artists"][0]["posts"][0]["donationPercentage"]).to be_a(Float)
+
+      expect(result["data"]["artists"][0]["posts"][0]).to have_key("donations")
+      expect(result["data"]["artists"][0]["posts"][0]["donations"]).to be_an(Array)
+    end
   end
 end
