@@ -13,9 +13,14 @@ module Types
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
 
     field :donations, [Types::DonationType], null: false
+    field :donation_percentage, Float, null: false
 
     def donations
       object.donations
+    end
+
+    def donation_percentage
+      object.donation_percentage
     end
   end
 end

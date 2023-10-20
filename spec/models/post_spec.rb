@@ -51,5 +51,20 @@ RSpec.describe Post, type: :model do
         expect(@post.current_amount).to eq(200)
       end
     end
+
+    describe "donation_percentage" do
+      it "returns the percentage of the requested amount that has been donated" do
+        expect(@post.donation_percentage).to eq(0)
+
+        donations = @post.donations.create(
+            name: Faker::Hipster.words(number: 1),
+            email: Faker::Internet.email,
+            amount: 200
+          )
+
+        @post.update_current_amount
+        expect(@post.donation_percentage).to eq(20)
+      end
+    end
   end
 end 
