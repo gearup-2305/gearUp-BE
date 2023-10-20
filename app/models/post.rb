@@ -14,4 +14,8 @@ class Post < ApplicationRecord
     self.current_amount = donations.sum(:amount)
     self.save
   end
+
+  def donation_percentage
+    (current_amount / requested_amount) * 100
+  end
 end
