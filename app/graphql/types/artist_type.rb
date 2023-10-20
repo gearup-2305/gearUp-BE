@@ -14,10 +14,20 @@ module Types
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
 
-    field :posts, [Types::PostType], null: false
+    field :posts, [Types::PostType], null: false do
+      argument :orderBy, PostOrderEnum, required: false
+    end
 
-    def posts
-      object.posts
+    def posts(orderBy: nil)
+      posts = object.posts
+
+      if orderBy == "ASC"
+        posts = posts.order(created_at: :asc)
+      elsif orderBy == "DESC"
+        posts = posts.order(created_at: :desc)
+      end
+
+      posts
     end
   end
 end

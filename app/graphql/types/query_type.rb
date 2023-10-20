@@ -38,7 +38,7 @@ module Types
       argument :orderBy, PostOrderEnum, required: false
     end
 
-    def posts(orderBy: nil, limit: nil)
+    def posts(orderBy: nil)
       posts = Post.all
 
       if orderBy == "ASC"
