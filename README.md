@@ -23,10 +23,10 @@ Link to [Front-End Repo]()
 - VCR / Webmock to stub HTTP requests in tests to simulate API interactions
 
 ### Project Description
-GearUP is a crowd funding app for artists to request supplies they need.  It is a full stack application that utilizes GraphQL and Amazon S3 bucket to store files uploaded by the artist.  There is an option to create an account to add a new post, or donors can search and select a project to donate to without having to create an account.
+GearUP is a crowd funding app for artists to request supplies they need.  It is a full stack SOA application that utilizes GraphQL to communicate between the front and back end. The back end also utilizes Sidekiq and Action Mailer to send confirmation and update emails to its users. There is an option to create an account to add a new post, or donors can search and select a project to donate to without having to create an account.
 
 ### Usage
-The backend app exposes a GraphQL API endpoint with data for performing queries and mutations for artists, donors, and their posts.  
+The backend app exposes a GraphQL API endpoint with data for performing queries and mutations for artists, their posts, and donations.  
 
 ### Database Schema
 ![](2023-10-16-08-29-22.png)
@@ -96,6 +96,8 @@ mutation {
 ### Future Iterations
 1. Add funcionality for payment processing using services such as PayPal, Venmo, Square, and/or Apple Pay
 2. Utilize OAuth to create and login to account
+3. Attach an AWS S3 Bucket for photo upload storage
+4. Add either a `completed` or `duration` column to the `Posts` table in order to implement logic surrounding fundraiser/project completion.
 
 ### Suggestions for Contribution
 If you would like to contribute to this project, please follow these steps:
