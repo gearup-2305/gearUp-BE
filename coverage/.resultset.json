@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/matt/4turing/projects/gearUp-BE/config/environment.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -10,7 +10,7 @@
           1
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/config/application.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/config/application.rb": {
         "lines": [
           1,
           null,
@@ -51,7 +51,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/config/boot.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/config/boot.rb": {
         "lines": [
           1,
           null,
@@ -59,7 +59,7 @@
           1
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/config/environments/test.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -123,7 +123,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/config/initializers/assets.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/config/initializers/assets.rb": {
         "lines": [
           null,
           null,
@@ -139,7 +139,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/config/initializers/content_security_policy.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/config/initializers/content_security_policy.rb": {
         "lines": [
           null,
           null,
@@ -150,51 +150,6 @@
           null,
           null,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/config/initializers/cors.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/config/initializers/filter_parameter_logging.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/config/initializers/inflections.rb": {
-        "lines": [
           null,
           null,
           null,
@@ -213,7 +168,52 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/config/initializers/permissions_policy.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/config/initializers/cors.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/config/initializers/filter_parameter_logging.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/config/initializers/inflections.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/config/initializers/permissions_policy.rb": {
         "lines": [
           null,
           null,
@@ -228,7 +228,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/config/initializers/sidekiq.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/config/initializers/sidekiq.rb": {
         "lines": [
           1,
           0,
@@ -239,7 +239,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/config/routes.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/config/routes.rb": {
         "lines": [
           1,
           null,
@@ -254,13 +254,628 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/app/helpers/application_helper.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/app/mailers/welcome_mailer.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/gear_up_be_schema.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/types/mutation_type.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/types/base_object.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/types/base_edge.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/types/base_connection.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/types/base_field.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/types/base_argument.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/mutations/create_post.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/mutations/base_mutation.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/types/base_input_object.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/types/post_type.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          25,
+          null,
+          null,
+          1,
+          25,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/types/donation_type.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/mutations/create_donation.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/mutations/update_post.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/mutations/update_donation.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/types/query_type.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          6,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/types/node_type.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/types/base_interface.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/types/artist_type.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          22,
+          null,
+          22,
+          0,
+          22,
+          5,
+          null,
+          null,
+          22,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/graphql/types/post_order_enum.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/spec/mailers/welcome_mailer_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/mailers/welcome_mailer.rb": {
         "lines": [
           1,
           null,
@@ -273,7 +888,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/app/mailers/application_mailer.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/mailers/application_mailer.rb": {
         "lines": [
           1,
           1,
@@ -281,45 +896,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/spec/models/artist_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/models/artist.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/spec/models/donation_spec.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/spec/models/artist_spec.rb": {
         "lines": [
           1,
           null,
@@ -332,11 +909,49 @@
           2,
           2,
           2,
+          2,
+          2,
+          2,
           null,
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/app/models/donation.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/models/artist.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/spec/models/donation_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/models/donation.rb": {
         "lines": [
           1,
           1,
@@ -344,7 +959,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/spec/models/post_spec.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/spec/models/post_spec.rb": {
         "lines": [
           1,
           null,
@@ -418,7 +1033,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/app/models/post.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/models/post.rb": {
         "lines": [
           1,
           1,
@@ -443,7 +1058,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/spec/requests/artists/all_artists_spec.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/spec/requests/artists/all_artists_spec.rb": {
         "lines": [
           1,
           null,
@@ -586,7 +1201,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/spec/requests/artists/one_artist_spec.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/spec/requests/artists/one_artist_spec.rb": {
         "lines": [
           1,
           null,
@@ -685,7 +1300,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/spec/requests/artists_posts/all_artists_with_posts_spec.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/spec/requests/artists_posts/all_artists_with_posts_spec.rb": {
         "lines": [
           1,
           null,
@@ -864,7 +1479,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/spec/requests/artists_posts/mutation_create_posts_spec.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/spec/requests/artists_posts/mutation_create_posts_spec.rb": {
         "lines": [
           1,
           null,
@@ -936,7 +1551,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/spec/requests/artists_posts/one_artist_with_posts_spec.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/spec/requests/artists_posts/one_artist_with_posts_spec.rb": {
         "lines": [
           1,
           null,
@@ -1094,7 +1709,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/spec/requests/artists_posts/update_post_spec.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/spec/requests/artists_posts/update_post_spec.rb": {
         "lines": [
           1,
           null,
@@ -1219,12 +1834,12 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/spec/requests/donations/create_donation_spec.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/spec/requests/donations/create_donation_spec.rb": {
         "lines": [
 
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/spec/requests/donations/mutation_create_donation_spec.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/spec/requests/donations/mutation_create_donation_spec.rb": {
         "lines": [
           1,
           null,
@@ -1323,7 +1938,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/spec/requests/donations/update_donation_spec.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/spec/requests/donations/update_donation_spec.rb": {
         "lines": [
           1,
           null,
@@ -1441,7 +2056,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/spec/workers/welcome_email_worker_spec.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/spec/workers/welcome_email_worker_spec.rb": {
         "lines": [
           1,
           1,
@@ -1494,7 +2109,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/app/workers/welcome_email_worker.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/workers/welcome_email_worker.rb": {
         "lines": [
           1,
           1,
@@ -1507,7 +2122,7 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/app/controllers/graphql_controller.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/controllers/graphql_controller.rb": {
         "lines": [
           null,
           null,
@@ -1565,496 +2180,13 @@
           null
         ]
       },
-      "/Users/matt/4turing/projects/gearUp-BE/app/controllers/application_controller.rb": {
+      "/Users/allenrussell/turing_work/mod4/projects/gearUp_be/app/controllers/application_controller.rb": {
         "lines": [
           1,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/gear_up_be_schema.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/types/mutation_type.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/types/base_object.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/types/base_edge.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/types/base_connection.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/types/base_field.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/types/base_argument.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/mutations/create_post.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/mutations/base_mutation.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/types/base_input_object.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/types/post_type.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          25,
-          null,
-          null,
-          1,
-          25,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/types/donation_type.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/mutations/create_donation.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/mutations/update_post.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/mutations/update_donation.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/types/query_type.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          null,
-          1,
-          6,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          4,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/types/node_type.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/types/base_interface.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/types/artist_type.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          22,
-          null,
-          22,
-          0,
-          22,
-          5,
-          null,
-          null,
-          22,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/matt/4turing/projects/gearUp-BE/app/graphql/types/post_order_enum.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
           null
         ]
       }
     },
-    "timestamp": 1697958931
+    "timestamp": 1698011812
   }
 }
