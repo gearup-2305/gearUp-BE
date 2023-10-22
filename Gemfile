@@ -62,6 +62,8 @@ group :development, :test do
   gem "webmock"
   gem "vcr"
   gem "faker"
+  gem "sidekiq"
+  gem "sinatra", github: "sinatra/sinatra"
 end
 
 group :development do

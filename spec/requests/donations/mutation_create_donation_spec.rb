@@ -66,8 +66,9 @@ RSpec.describe 'GraphQL Create Donation', :vcr do
 
       expect(Donation.last.name).to eq("donation")
       expect(Donation.last.email).to eq("email@gmail.com")
-      
+
       expect(Donation.last.post.current_amount).to eq(50.0)
+      expect(WelcomeEmailWorker.jobs.size).to eq(1)
     end
 
     it "returns an error if donation is not created" do

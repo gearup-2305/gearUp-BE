@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Donation Confirmation</title>
+</head>
+<body>
+  <h1>Thank you for your donation!</h1>
+  <p>Dear <%= @user.name %>,</p>
+  <p>We have received your donation of $<%= number_to_currency(@donation.amount) %> for post ID <%= @donation.post_id %>.</p>
+</body>
+</html>
