@@ -1,5 +1,9 @@
-# GearUP - Project README
-# Back-End
+[![GitHub contributors](https://img.shields.io/github/contributors/gearup-2305/gearUp-BE)](https://github.com/gearup-2305/gearUp-BE/graphs/contributors)
+[![GitHub forks](https://img.shields.io/github/forks/gearup-2305/gearUp-BE)](https://github.com/gearup-2305/gearUp-BE/forks)
+[![GitHub Repo stars](https://img.shields.io/github/stars/gearup-2305/gearUp-BE)](https://github.com/gearup-2305/gearUp-BE/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/gearup-2305/gearUp-BE)](https://github.com/gearup-2305/gearUp-BE/issues)
+
+# GearUp (Back-End Repo)
 
 Link to [GearUP Website]()
 Link to [Front-End Repo]()
@@ -22,6 +26,16 @@ Link to [Front-End Repo]()
 - ShouldaMatchers gem for testing assertions
 - VCR / Webmock to stub HTTP requests in tests to simulate API interactions
 
+### Built With
+* ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
+* ![Postgresql](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+* ![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
+* ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
+* ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+* ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
+* ![Postman Badge](https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=fff&style=for-the-badge)
+* ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
 ### Project Description
 GearUP is a crowd funding app for artists to request supplies they need.  It is a full stack SOA application that utilizes GraphQL to communicate between the front and back end. The back end also utilizes Sidekiq and Action Mailer to send confirmation and update emails to its users. There is an option to create an account to add a new post, or donors can search and select a project to donate to without having to create an account.
 
@@ -35,7 +49,8 @@ The backend app exposes a GraphQL API endpoint with data for performing queries 
 
 1. `POST /graphql`
 
-Queries:
+**Queries:**<br>
+All Artists:
 ```
 query artists {
     artists {
@@ -70,7 +85,8 @@ query artists {
 }
 ```
 
-Mutations:
+**Mutations:**<br>
+Create Post:
 ```
 mutation {
   createPost(input:{
@@ -93,6 +109,32 @@ mutation {
   }
 }
 ```
+
+Create Donation:
+```
+mutation UpdatePost {
+  updatePost(input: {
+    id: 1
+    title: "I need "
+    details: "Don't worry"
+    imageUrl: "http://wiegand.test/jaye_reinger"
+    requestedAmount: 3444.00
+    currentAmount: 0
+    artistId: 1
+  }) {
+    post {
+      id
+      title
+      details
+      imageUrl
+      requestedAmount
+      currentAmount
+    }
+    errors
+  }
+}
+```
+
 ### Future Iterations
 1. Add funcionality for payment processing using services such as PayPal, Venmo, Square, and/or Apple Pay
 2. Utilize OAuth to create and login to account
