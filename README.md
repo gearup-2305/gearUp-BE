@@ -5,8 +5,8 @@
 
 # GearUp (Back-End Repo)
 
-Link to [GearUP Website]()
-Link to [Front-End Repo]()
+Link to [GearUP Website](https://gear-up-ui-ux.vercel.app/)
+Link to [Front-End Repo](https://github.com/gearup-2305/gearUp-UI-UX)
 
 ### Table of Contents
 1. [Setup](#setup)
@@ -54,6 +54,40 @@ All Artists:
 ```
 query artists {
     artists {
+        city
+        createdAt
+        email
+        id
+        medium
+        name
+        passwordDigest
+        profileImage
+        state
+        updatedAt
+        zipcode
+      posts {
+        id
+        title
+        details
+        imageUrl
+        requestedAmount
+        currentAmount
+        artistId
+        donations {
+          id
+          name
+          email
+          amount
+          postId
+        }
+      }
+    }
+}
+```
+One Artist:
+```
+query artist ($id: ID!) {
+    artist (id: $id) {
         city
         createdAt
         email
