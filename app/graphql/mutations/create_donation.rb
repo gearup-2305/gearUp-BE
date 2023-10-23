@@ -14,10 +14,10 @@ module Mutations
       donation = post.donations.create!(amount: amount, post_id: post_id, name: name, email: email)
 
       if donation.save
+        post.update_current_amount
         
         WelcomeEmailWorker.perform_async(email, donation.id)
 
-        post.update_current_amount
         {
           donation: donation,
           errors: []
