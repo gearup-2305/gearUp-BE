@@ -17,7 +17,6 @@ module Mutations
         post.update_current_amount
         
         WelcomeEmailWorker.perform_async(email, donation.id)
-        
         {
           donation: donation,
           errors: []
