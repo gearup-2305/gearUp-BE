@@ -4,6 +4,7 @@ module Types
   class QueryType < Types::BaseObject
     field :node, Types::NodeType, null: true, description: "Fetches an object given its ID." do
       argument :id, ID, required: true, description: "ID of the object."
+      argument :limit, Int, required: false
     end
 
     def node(id:)
@@ -44,6 +45,10 @@ module Types
         posts = posts.order(created_at: :asc)
       elsif orderBy == "DESC"
         posts = posts.order(created_at: :desc)
+      end
+
+      if limit
+        posts = posts.limit(limit)
       end
 
       posts
